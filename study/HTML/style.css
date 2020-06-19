@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+}
+/* nav 樣式設定*/
+nav{
+    display: flex;
+}
+nav>.logo{
+    flex: none;/* 固定SIZE */
+    width: 100px;
+    background-color: darkkhaki;
+}
+nav>.menu{
+    flex: auto;/* 把空間稱滿 */
+    background-color: chocolate;
+}
+nav>.user{
+    flex: none;
+    width: 100px;
+    background-color: darkgreen;
+}
+main{ /* 容器 */
+    display: flex;
+    justify-content: center; /* 水平 start靠左 center置中 end靠右*/
+    align-items: center; /* 垂直 stretch預設值(延展) center置中 flex-start靠上 flex-end靠下 */
+    background-color: aqua;
+}
+main>.item{ /* 項目 */
+    flex: none;
+    width: 300px;margin: 10px;
+    background-color: brown;
+}

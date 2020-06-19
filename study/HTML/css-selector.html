@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            CSS選擇器
+        </title>
+        <style type="text/css">
+        /* 標籤 選擇器 想改啥標籤就改啥標籤*/
+        body{
+            font-size: 15px;font-family:"標楷體";
+            }
+        h3{
+            font-size: 25px;font-family: "微軟正黑體";text-decoration: underline;
+        }    
+        /* class 選擇器 前面加. 就可以給class用*/
+            .title{font-weight: bolder;font-size: 30px}
+            .content{height: auto;width: auto;padding: 5px;border: 2px solid skyblue;margin-top: 15px;}
+            .keyword{color: gold}
+            .absolute{
+                position: absolute;right: 0px;top: 0px;
+                height: 100px;width: 100px;background-color: tan;
+                }
+            .relative{
+                position: relative;left: 50px;top: 10px;
+                height: 100px;width: 100px;background-color:navy;
+            }
+            /* 標籤. 就可以在限制讓同一種標籤有差別*/
+            li.ie{
+                font-size: 22px;
+            }
+            div.content{
+                height: auto;width: auto;padding: 5px;border: 2px solid darkblue;margin-top: 15px;
+            }
+        /* id 選擇器*/
+            #check{
+                border:2px solid gray;
+                background-color: pink;padding: 5px 10px;
+            }
+        /* 虛擬 選擇器 -> 搭配其他選擇器使用*/
+            /* :hover 滑鼠移上去 其他自行GOO*/
+            #check:hover{
+                background-color: darkgray;
+            }
+            /* :focus 目標取得焦點時 套用一組設定*/
+            input:focus{
+                border: 3px solid yellow;
+            }
+        /* 階層式 選擇器 -> 搭配其他選擇器使用*/
+            /* .class空格a 空格代表階層關係*/
+            .game a{
+                color: cyan;
+            }
+            .raiders a{
+                color: red;
+            }
+        </style>
+    </head>
+<body>
+    <h3>
+        遊戲網址
+    </h3>
+        <ul class="game">
+            <li class="ie"><a href="https://mahjongsoul.com/">雀魂</a></li>
+            <li><a href="http://game.granbluefantasy.jp/#top">Granbluefantasy</a></li>
+        </ul>
+        
+        <h3>
+            攻略網址
+        </h3>
+            <ul class="raiders">
+                <li style="font-size: 20px;"><a href="https://tw.op.gg/">OPGG</a></li>
+            </ul>
+    <h3>日麻台數</h3>
+    <table border="2" width="400" cellpadding="2" style="background-color: rgb(69, 201, 206);">
+        <tr>
+            <td>
+                <b>1番</b>
+            </td>
+            <td>
+                <b>2番</b>
+            </td>
+            <td>
+                <b>3番</b>
+            </td>
+            <td>
+                <b><u>役滿</u></b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                断ヤオ九
+            </td>
+            <td>
+                対々和
+            </td>
+            <td>
+                混一色
+            </td>
+            <td>
+                国士無双
+            </td>
+        </tr>
+        <tr>
+            <td>
+                門前清自摸和
+            </td>
+            <td>
+                三暗刻
+            </td>
+            <td>
+                純全帯ヤオ九
+            </td>
+            <td>
+                大三元
+            </td>
+        </tr>
+        <tr>
+            <td>
+                立直
+            </td>
+            <td>
+               七対子
+            </td>
+            <td>
+                二盃口
+            </td>
+            <td>
+                大四喜
+            </td>
+        </tr>
+        <tr>
+            <td>
+                平和
+            </td>
+            <td>
+                三色同順
+            </td>
+            <td>
+
+            </td>
+            <td>
+                九蓮宝燈
+            </td>
+        </tr>
+    </table>
+    <h3>
+        加入好友
+    </h3>
+    <div class="content">
+        填寫名稱 <input type="text" /> <button id="check">確認</button>
+    </div>
+</body>
+</html>

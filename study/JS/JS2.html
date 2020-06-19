@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8"></meta>
+    <title>JS</title>
+    <script type="text/javascript">
+      //內建函式
+      //alert("OMGOMGOMG");
+      //函式的基礎
+
+      //設計階段
+      /*function test(message  參數名稱 ){
+        //函式的本體
+        alert(message);
+      } */
+      /*function add(n1,n2  多數參數 ){
+        alert(n1+n2);
+        return n1+n2;
+      }*/
+      //呼叫/使用階段
+      /*
+      test("hello world"  傳入函式的參數資料 );
+      test("MOJITO");
+      add(3,4);
+      add(10,15); 
+      */
+     /*var result = add(3,4)*add(10,20);
+     alert(result);*/
+      //整合
+      function getsum(max){
+        var sum = 0;
+      var n = 1;
+      while(n<=max){
+        sum+=n;
+        n++;
+      }
+      alert(sum);
+      return sum;
+      }
+      getsum(50);
+      getsum(100);
+      var result = getsum(50)*getsum(100);
+      alert(result);
+    </script>
+   </head> 
+   <body>
+
+   </body>
+</html>

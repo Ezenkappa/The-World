@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>JS</title>
+    <script type="text/javascript">
+      /* 宣告提升 Hoisting
+      x=10; 給初始資料
+      alert(x); 使用變數
+      var x; 宣告變數
+      這樣JS引擎會自動把var x; 拉到最上面 這叫做宣告提升
+      跟
+      var x; 宣告變數
+      x=10; 給初始資料
+      alert(x); 使用變數
+      */
+      /*
+      alert(x); 使用變數
+      var x=10; 宣告變數同時給初始資料
+      這樣子會undefined(未定義) 因為JS引擎不會把初始資料一起提升
+      跟
+      var x;
+      alert(X);
+      x=10;
+      出現的結果一樣!
+      */
+      /* 函式也是如此
+      function test(){ //函式的宣告
+       alert("LUL");
+      }
+      test(); //呼叫函式
+      跟
+      test(); //呼叫函式
+      function test(){ //函式的宣告
+       alert("LUL");
+      }
+      一樣
+      */
+      /*
+      var test=function(){
+        alert(x);
+      }
+      test();
+      跟
+      test();
+      var test=function(){
+        alert(x);
+      }
+      不同,原因跟上方一樣,函式資料不會被提升!
+       */
+       </script>
+  </head> 
+  <body>
+ 
+  </body>
+</html>

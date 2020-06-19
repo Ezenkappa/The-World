@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>css表格進階</title>
+    <style>
+        table{
+            width: 500px;
+            /* collapse 崩塌 -> 兩條線變一條 */
+            border-collapse: collapse;
+        }
+        td{
+            border-bottom: 1px solid gray;padding: 6px;
+        }
+        /* 表格中的第一個tr */
+        tr:nth-child(1){
+            background-color: rgb(83, 50, 226);color: rgb(255, 205, 205);
+        }
+        /* 表格中的第偶數對tr */
+        tr:nth-child(even){
+            background-color: rgb(148, 148, 148);
+        }
+    </style>
+</head>
+<body>
+    <h3>遊戲網址</h3>
+        <ul>
+            <li><a href="https://mahjongsoul.com/">雀魂</a></li>
+        </ul>
+        
+    <h3>日麻台數</h3>
+    <table>
+        <tr>
+            <td>
+                1番
+            </td>
+            <td>
+                断ヤオ九
+            </td>
+            <td>
+                門前清自摸和
+            </td>
+            <td>
+                平和
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2番
+            </td>
+            <td>
+                対々和
+            </td>
+            <td>
+                三暗刻
+            </td>
+            <td>
+                七対子
+            </td>
+        </tr>
+        <tr>
+            <td>
+                3番
+            </td>
+            <td>
+                混一色
+            </td>
+            <td>
+                二盃口
+            </td>
+            <td>
+                純全帯ヤオ九
+            </td>
+        </tr>
+        <tr>
+            <td>
+                役滿
+            </td>
+            <td>
+               国士無双
+            </td>
+            <td>
+                九蓮宝燈
+            </td>
+            <td>
+                大四喜
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
