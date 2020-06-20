@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>JSevent 事件處理</title>
+    <script type="text/javascript">
+      /*function over(element){
+        element.style.color="green";
+      }
+      function out(element) {
+        element.style.color="black";
+      }*/
+      //用JavaScript 的程式,動態的註冊事件處理器
+      function init(){
+        var btn=document.getElementById("btn");
+      /*  btn.onclick=function(){
+          alert("喔耶");
+        } */
+        var handler = function(){ //準備一個事件處理器(對應事件的函式)
+          alert("喔耶");
+        }
+        btn.addEventListener("click"/*事件的名稱*/ , handler);
+      }
+    </script>
+  </head> 
+  <body onload="init();">
+    <button id="btn">點我</button>
+   <!-- <span onmouseover="over(this);" onmouseout="out(this);">喔拉喔拉</span>
+    <div onmouseover="over(this);" onmouseout="out(this);">耶黑耶黑</div>  -->
+
+  </body>
+</html>

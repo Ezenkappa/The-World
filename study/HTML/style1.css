@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+}
+/* nav 樣式設定*/
+nav{
+    display: flex;
+}
+nav>.logo{
+    flex: none;
+    width: 100px;
+    background-color: darkkhaki;
+}
+nav>.menu{
+    flex: auto;
+    background-color: chocolate;
+}
+nav>.user{
+    flex: none;
+    width: 100px;
+    background-color: darkgreen;
+}
+main{ /* 容器 */
+    display: flex;
+    flex-wrap: wrap; /* wrap 換行 */
+    justify-content: center; 
+    align-items: center; 
+    background-color: aqua;
+}
+main>.item{ /* 項目 */
+    flex: none;
+    width: 270px;margin: 10px;
+    background-color: brown;
+}
+@media (max-width:1200px){
+    main>.item{
+        width: 45%;
+    }
+}
+@media (max-width:500px){
+    main>.item{
+        width: 90%;
+    }
+}

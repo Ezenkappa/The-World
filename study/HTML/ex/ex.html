@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>網頁製作</title>
+    <script type="text/javascript">
+    function get3c(){
+            //  讀取radio的值
+            var TC = document.getElementById("TC");
+            for(var i=0; i<TC.tc.length;i++){
+                if(TC.tc[i].checked){
+                    var tc = TC.tc[i].value;
+                    alert(tc);
+                }
+            }
+        }
+
+    function check(formlist) {
+      var obj=formlist.drink;
+      var selected=[];
+      for (var i=0; i<obj.length; i++) {
+        if (obj[i].checked) {
+          selected.push(obj[i].value);
+          }
+        }
+      alert("您點的飲料 : " + selected.join());
+      }
+      </script>
+    <style type="text/css">
+        tr:nth-child(odd){
+            background-color: bisque;
+        }
+        tr:nth-child(even){
+            background-color: azure;
+        }
+        tr:nth-child(1){
+            background-color: white;
+            text-align: center;
+            
+        }
+        .none{
+            position:absolute;
+            left:70px;
+        }
+        .pic{
+            border-radius: 40px;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+            border: 5px groove greenyellow;
+        }
+        fieldset {
+            display: block;
+            width:40%;
+            border: 5px inset gold;
+            float: left;
+            }
+        legend {
+            display: table;
+            position: relative;
+            margin: 0px;
+            padding: 5px;
+            font-size: 20px;
+            text-align: left;
+            }
+    </style>
+</head>
+<body>
+    <div class="none">熱門電影院</div>
+    <br/>
+    <table border="1" >
+        <tr>
+            <td><b>電影名稱</b></td>
+            <td><b>上映日期</b></td>
+        </tr>
+        <tr>
+            <td>變形金剛4</td>
+            <td>6/27</td>
+        </tr>
+        <tr>
+            <td>星際效應</td>
+            <td>11/7</td>
+        </tr>
+        <tr>
+            <td>等一個人咖啡，</td>
+            <td>8/15</td>
+        </tr>
+        <tr>
+            <td>哈比人：五軍之戰</td>
+            <td>12/17</td>
+        </tr>
+        <tr>
+            <td>絕地救援</td>
+            <td>4/8</td>
+        </tr>
+    </table>
+    <hr/>
+    <form name="TC" id="TC">
+    <fieldset>
+        <legend>常用3C產品</legend>
+        <input type="radio" name="tc" value="手機">手機
+        <input type="radio" name="tc" value="NoteBook">NoteBook
+        <input type="radio" name="tc" value="平板">平板
+        <input type="radio" name="tc" value="相機">相機
+        <input type="radio" name="tc" value="自拍神器">自拍神器
+        <input type="radio" name="tc" value="PC">PC
+        <button onclick="get3c()">點擊</button>
+    </fieldset>
+    </form>
+    <form name="drinklist">
+    <fieldset>
+        <legend>飲料清單</legend>
+        <input type="checkbox" name="drink" value="咖啡">咖啡
+        <input type="checkbox" name="drink" value="奶茶">奶茶
+        <input type="checkbox" name="drink" value="綠茶">綠茶
+        <input type="checkbox" name="drink" value="紅茶">紅茶
+        <input type="checkbox" name="drink" value="麥茶">麥茶
+        <input type="checkbox" name="drink" value="蜜茶">蜜茶
+        <button onclick="check(this.form)">送出</button>
+    </fieldset>
+    </form>
+    <br/><br/><br/><br/><br/><br/>
+    <hr/>
+    <figcaption class="pic">
+        <img src="1.png" />
+        <figure>這張照片是拍攝於<span style="color: red;font-size: 36px;">長榮大學</span>的荔枝園</figure>
+       </figcaption>
+</body> 
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>HTML DOM</title>
+    <script type="text/javascript">
+    //alert(window.screen.width+"x"+window.screen.height);
+    function change(){
+      //window.document.body.innerHTML="HEHEXD";
+      var spanObj=document.getElementById("bs"); // window可不寫
+      spanObj.innerHTML="小";
+      spanObj.style.color="blue";
+      spanObj.style.fontWeight="bold";
+      // spanObj.style.display="none";
+    }
+  </script>
+  </head> 
+  <body>
+    <div>風大雨<span id = "bs">大</span>太陽大</div>
+    <button onclick="change();">change</button>  
+  </body>
+</html>
