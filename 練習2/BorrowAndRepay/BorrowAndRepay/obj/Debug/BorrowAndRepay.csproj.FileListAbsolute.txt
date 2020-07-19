@@ -1,0 +1,10 @@
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\bin\Debug\BorrowAndRepay.exe.config
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\bin\Debug\BorrowAndRepay.exe
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\bin\Debug\BorrowAndRepay.pdb
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\obj\Debug\BorrowAndRepay.csprojAssemblyReference.cache
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\obj\Debug\BorrowAndRepay.Form1.resources
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\obj\Debug\BorrowAndRepay.Properties.Resources.resources
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\obj\Debug\BorrowAndRepay.csproj.GenerateResource.cache
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\obj\Debug\BorrowAndRepay.csproj.CoreCompileInputs.cache
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\obj\Debug\BorrowAndRepay.exe
+D:\DatabaseTheworld\practice1\The-World\練習2\BorrowAndRepay\BorrowAndRepay\obj\Debug\BorrowAndRepay.pdb
